@@ -1,8 +1,14 @@
 import React, { useState } from 'react'
-import { Button, Input } from '@chakra-ui/react'
+import { Button, Input,Box , Grid, GridItem} from '@chakra-ui/react'
+
+
+
+
 
 function Hw () {
+    
 
+    
 const [input, setInput] = useState({
     username: '',
     password: '',
@@ -99,6 +105,16 @@ const [input, setInput] = useState({
  
         <Button onClick>Login</Button>
         </form>
+
+       <Box  display='flex' alignItems='center' mt={7} color='black' bg='gray' >HELLO </Box>
+       
+       <br/><Grid templateColumns='repeat(5, 1fr)' gap={6}>
+  <GridItem w='100%' h='3 00' backgroundImage='https://pbs.twimg.com/media/DPwBYdHWAAIWnNT.jpg'/>
+  <GridItem w='100%' h='90' bg='blue.500' />
+  <GridItem w='100%' h='20' bg='blue.500' />
+  <GridItem w='100%' h='20' bg='blue.500' />
+  <GridItem w='100%' h='20' bg='blue.500' />
+</Grid>
     </div>
   );
 
