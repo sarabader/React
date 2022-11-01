@@ -1,27 +1,34 @@
+import { React } from 'react';
+import { Link } from 'react-router-dom';
+
 //import React from 'react'
 // import { CloseButton } from '@chakra-ui/react'
 
-// export const Nav = () => {
+// function Nav(){
 //   return (
 //     <div >
         
 //     <ul className='Nav'>
-//     <CloseButton />
-//     <li>Home page </li>
+//     <Link to ="Clickme">clickme </Link>
 //     <li>About Us </li>
 //    </ul>
 //    </div>
 //   )
 // }
 
-import { React } from 'react';
+// export default Nav
+
+
+
+
+
+
 import logo from '../image/logo.webp';
 import {
   Box,
   Flex,
   Avatar,
   HStack,
-  Link,
   IconButton,
   Button,
   Menu,
@@ -35,10 +42,11 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
 
-const Links = ['Home Page', 'Cources', 'Camps'];
+const Links = [
+  <Link to ="/Clickme" >Home Page</Link>  , 'Cources', 'Camps'];
 
 const NavLink = ({ children }) => (
-  <Link
+  <Link 
     px={2}
     py={1}
     rounded={'md'}
